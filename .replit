@@ -1,0 +1,24 @@
+run = ["python3", "main.py"]
+language = "python3"
+entrypoint = "main.py"
+hidden = ["venv", ".config", "**/__pycache__", "**/.mypy_cache", "**/*.pyc"]
+
+# The environment variables needed to correctly start Python and use the
+# package proxy.
+[env]
+VIRTUAL_ENV = "/home/runner/${REPL_SLUG}/venv"
+PATH = "${VIRTUAL_ENV}/bin"
+PYTHONPATH="${VIRTUAL_ENV}/lib/python3.8/site-packages"
+REPLIT_POETRY_PYPI_REPOSITORY="https://package-proxy.replit.com/pypi/"
+
+# Configures the packager.
+[packager]
+language = "python3"
+# Never attempt to install `unit_tests`. If there are packages that are being
+# guessed wrongly, add them here.
+ignoredPackages = ["unit_tests"]
+
+  [packager.features]
+  enabledForHosting = false
+  packageSearch = true
+  guessImports = false

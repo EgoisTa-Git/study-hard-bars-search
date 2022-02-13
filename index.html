@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4a860630fc4c4ba8bfb3f55993810188 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4a860630fc4c4ba8bfb3f55993810188" ></div>
+        
+</body>
+<script>    
+    
+            var map_4a860630fc4c4ba8bfb3f55993810188 = L.map(
+                "map_4a860630fc4c4ba8bfb3f55993810188",
+                {
+                    center: [55.749486, 37.591485],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_653d2049b2ea48daa7c7e5b9d1a3326e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4a860630fc4c4ba8bfb3f55993810188);
+        
+    
+            var marker_92f27abf7d14474bb9dc4ae3250bdde9 = L.marker(
+                [55.749727189039135, 37.59427469048947],
+                {}
+            ).addTo(map_4a860630fc4c4ba8bfb3f55993810188);
+        
+    
+            var icon_2e7b249f24094fc58548a5e74ec21781 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92f27abf7d14474bb9dc4ae3250bdde9.setIcon(icon_2e7b249f24094fc58548a5e74ec21781);
+        
+    
+        var popup_0a062421e8774083a7cb76bf08bba382 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d10e8590aac94626b328dad79b6fe731 = $(`<div id="html_d10e8590aac94626b328dad79b6fe731" style="width: 100.0%; height: 100.0%;">Jeffreys coffee</div>`)[0];
+            popup_0a062421e8774083a7cb76bf08bba382.setContent(html_d10e8590aac94626b328dad79b6fe731);
+        
+
+        marker_92f27abf7d14474bb9dc4ae3250bdde9.bindPopup(popup_0a062421e8774083a7cb76bf08bba382)
+        ;
+
+        
+    
+    
+            var marker_72259cb5501e43308596718c8e58c599 = L.marker(
+                [55.75042875579532, 37.594007999999995],
+                {}
+            ).addTo(map_4a860630fc4c4ba8bfb3f55993810188);
+        
+    
+            var icon_fe4ea0c894b44f96b135be6511ffb0e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_72259cb5501e43308596718c8e58c599.setIcon(icon_fe4ea0c894b44f96b135be6511ffb0e2);
+        
+    
+        var popup_1794f3baa7dd4260856a6f1215e74bb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d7c7fc230ef5470eac8f6b95f5e8ee89 = $(`<div id="html_d7c7fc230ef5470eac8f6b95f5e8ee89" style="width: 100.0%; height: 100.0%;">ПРАВDА Кофе</div>`)[0];
+            popup_1794f3baa7dd4260856a6f1215e74bb4.setContent(html_d7c7fc230ef5470eac8f6b95f5e8ee89);
+        
+
+        marker_72259cb5501e43308596718c8e58c599.bindPopup(popup_1794f3baa7dd4260856a6f1215e74bb4)
+        ;
+
+        
+    
+    
+            var marker_6b4efbe0f32c4282b173a938b510c7bc = L.marker(
+                [55.75205875626837, 37.592163000000006],
+                {}
+            ).addTo(map_4a860630fc4c4ba8bfb3f55993810188);
+        
+    
+            var icon_851f50be20324c53aed1e4443b6e4ad4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6b4efbe0f32c4282b173a938b510c7bc.setIcon(icon_851f50be20324c53aed1e4443b6e4ad4);
+        
+    
+        var popup_620d4b6aa7b54ca39342e50c9644f0b7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd18c799e19042fba4073de664b06b48 = $(`<div id="html_bd18c799e19042fba4073de664b06b48" style="width: 100.0%; height: 100.0%;">John Coffey</div>`)[0];
+            popup_620d4b6aa7b54ca39342e50c9644f0b7.setContent(html_bd18c799e19042fba4073de664b06b48);
+        
+
+        marker_6b4efbe0f32c4282b173a938b510c7bc.bindPopup(popup_620d4b6aa7b54ca39342e50c9644f0b7)
+        ;
+
+        
+    
+    
+            var marker_96e50b4fd19e4cf2b03ac3b30d3c6f9c = L.marker(
+                [55.75196715845947, 37.58851112895049],
+                {}
+            ).addTo(map_4a860630fc4c4ba8bfb3f55993810188);
+        
+    
+            var icon_4cb01fd2a24b41f5a358deae5bbe4790 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_96e50b4fd19e4cf2b03ac3b30d3c6f9c.setIcon(icon_4cb01fd2a24b41f5a358deae5bbe4790);
+        
+    
+        var popup_c9696d9d179b4e4288871cf07fb852d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ac017519e3440ca962ea5187cb0cda2 = $(`<div id="html_3ac017519e3440ca962ea5187cb0cda2" style="width: 100.0%; height: 100.0%;">Кофемания</div>`)[0];
+            popup_c9696d9d179b4e4288871cf07fb852d4.setContent(html_3ac017519e3440ca962ea5187cb0cda2);
+        
+
+        marker_96e50b4fd19e4cf2b03ac3b30d3c6f9c.bindPopup(popup_c9696d9d179b4e4288871cf07fb852d4)
+        ;
+
+        
+    
+    
+            var marker_130437dff68f4a789594d79bd13bd12f = L.marker(
+                [55.75114375600281, 37.596042999999995],
+                {}
+            ).addTo(map_4a860630fc4c4ba8bfb3f55993810188);
+        
+    
+            var icon_0a3c8203cd4f4b05b1b0bba7191685bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_130437dff68f4a789594d79bd13bd12f.setIcon(icon_0a3c8203cd4f4b05b1b0bba7191685bc);
+        
+    
+        var popup_3346d4bcb87a404aac0de4b25ddb2863 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6db86f856254c448046b66208a131c3 = $(`<div id="html_a6db86f856254c448046b66208a131c3" style="width: 100.0%; height: 100.0%;">One Price Coffee</div>`)[0];
+            popup_3346d4bcb87a404aac0de4b25ddb2863.setContent(html_a6db86f856254c448046b66208a131c3);
+        
+
+        marker_130437dff68f4a789594d79bd13bd12f.bindPopup(popup_3346d4bcb87a404aac0de4b25ddb2863)
+        ;
+
+        
+    
+</script>
